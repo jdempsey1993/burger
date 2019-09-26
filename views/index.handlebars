@@ -1,6 +1,6 @@
-<h1>Burgers!</h1>
+<h1>Eat The Burgers!</h1>
 
-<h2>Cats that are not sleepy!</h2>
+<h2>Enter a burger you want to eat and hit the submit button.</h2>
 
 <ul>
   {{#each cats}}
@@ -10,7 +10,7 @@
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
+<h2>Burgers!</h2>
 
 <ul>
   {{#each cats}}
@@ -20,18 +20,18 @@
   {{/each}}
 </ul>
 
-<h2>Add a Cat</h2>
+<h2>Add a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Cat Name:</label>
+    <label for="ca">B Name:</label>
     <input type="text" id="ca" name="name">
   </div>
 
   <div class="form-group">
     <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
+    <input type="radio" name="type" value="1" checked> Placeholder<br>
+    <input type="radio" name="type" value="0"> Placeholder
   </div>
 
   <button type="submit">Add Burger</button>

@@ -18,22 +18,22 @@ router.get("/", function(req, res) {
 
 router.post("/api/burgers", function(req, res) {
   burgers.create([
-    "name", "burger"
+    "name", "type"
   ], [
-    req.body.name, req.body.sleepy
+    req.body.name, req.body.type
   ], function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
   });
 });
 
-router.put("/api/burger/:id", function(req, res) {
+router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
 
   burgers.update({
-    sleepy: req.body.sleepy
+    type: req.body.type
   }, condition, function(result) {
     if (result.changedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
