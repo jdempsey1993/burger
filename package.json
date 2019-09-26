@@ -1,0 +1,24 @@
+{
+  "name": "eattheburger",
+  "version": "1.0.0",
+  "description": "An application to log various types of burgers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdempsey1993/eatTheBurger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdempsey1993/eatTheBurger/issues"
+  },
+  "homepage": "https://github.com/jdempsey1993/eatTheBurger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1"
+  }
+}
